@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="splitcontainer">
+            <div class="leftbox">
+                <canvas id="canvas"></canvas>
+
+                <div id="linklist">
+                    <!-- json stuff here -->
+                    <div class="boxscale">
+                    </div>
+                </div>
+                <div class="opening">
+                </div>
+            </div>
+
+            <div class="rightbox">
+                <img src="4x/Asset 1@4x.png">
+            </div>
+        </div>
+
+        <div class="overlay">
+            <model-viewer id="myModel" src="model/Sketchfab_Scene.glb" ar ar-modes="webxr scene-viewer quick-look"
+                camera-controls poster="model/poster.webp" shadow-intensity="1 in-camera-orbit="auto 30deg 137m" max-camera-orbit="auto 100deg auto" min-field-of-view="30deg"">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+                <div id="ar-prompt">
+                    <img src="model/ar_hand_prompt.png">
+                </div>
+            </model-viewer>
+
+    </div>
+
+    <script src="model/script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+
+
+    <script>
+        function delay(URL) {
+            setTimeout(function () { window.location = URL }, 500);
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="fetchjson.js"></script>
+    <script src="loadlink.js"></script>
+</body>
+
+</html>
+
+<!-- flex base at 33%
+a active -->
