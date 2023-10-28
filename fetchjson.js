@@ -1,4 +1,5 @@
 container = document.getElementById("linklist")
+popup = document.getElementById("overlay")
 // retrieve the data in your JSON file and save it as a variable
 let collection;
 fetch('https://opensheet.elk.sh/1hIj-l4jj64S-OlMHcGf1igE98lUVvgcpP-LBSYJV8QQ/1')
@@ -9,7 +10,10 @@ fetch('https://opensheet.elk.sh/1hIj-l4jj64S-OlMHcGf1igE98lUVvgcpP-LBSYJV8QQ/1')
 })
 
 
-
+function hideOverlay() {
+  popup.style.display = "none";
+  console.log("hellos")
+}
 
 function renderTemplate() {
   // create a string where your dynamic HTML will be stored
