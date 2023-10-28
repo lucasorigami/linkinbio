@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modelViewer.addEventListener("mouseup", (event) => {
       const dragDuration = event.timeStamp - dragStartTimestamp;
     console.log(dragDuration)
-      if (dragDuration <= 250) {
+      if (dragDuration <= 100) {
             // Navigate to the link
             window.location.href = "https://google.com";
         }
