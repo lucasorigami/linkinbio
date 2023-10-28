@@ -20,7 +20,7 @@ body {
 
 /* === POPUP === */
 #overlay {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   z-index: 1;
