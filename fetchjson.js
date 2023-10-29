@@ -27,8 +27,8 @@ function renderTemplate() {
   for (let item of collection) {
     html +=
       // this is where you define you template
-      `<div class="child" onclick="eggLink = '${item.Link}'; showOverlay(); console.log(eggLink);">
-      <a>${item.Title}</a></div>`;
+      // html
+      `<div class="child" onclick="eggLink = '${item.Link}'; showOverlay(); console.log(eggLink);"><img src="model/poster.webp"</img></div>`;
       // `<a href="${item.Link}"><div class="child">${item.Title}</div></a>`;
   }
   
