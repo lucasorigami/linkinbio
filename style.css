@@ -8,14 +8,20 @@
 }
 
 body {
-  background-color: red;
+  background-color: black;
   align-items: center;
 
 }
 
 .container {
+  background-color: #f44242;
   position: relative;
   max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
 /* === POPUP === */
@@ -24,7 +30,6 @@ body {
   flex-direction: column;
   position: absolute;
   z-index: 1;
-  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
@@ -42,7 +47,7 @@ body {
 }
 
 .leftbox {
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,9 +55,11 @@ body {
 }
 
 .rightbox {
-  flex: auto;
+  flex: 2;
+  max-width: 20%;
   align-items: center;
   vertical-align: center;
+  margin: 5px;
 }
 
 #linklist {
@@ -63,8 +70,11 @@ body {
   flex-wrap: wrap;
 }
 
-img {
-  width: 30%;
+
+
+.rightbox img {
+
+  width: 100%;
   height: auto;
 }
 
@@ -234,4 +244,16 @@ model-viewer[ar-status="session-started"]>#ar-prompt {
 
 model-viewer>#ar-prompt>img {
   animation: circle 4s linear infinite;
+}
+
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .child{
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+}
 }
