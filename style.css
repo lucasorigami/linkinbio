@@ -56,12 +56,15 @@ body {
 }
 
 .rightbox {
+  display: flex;
   flex: 2;
   max-width: 20%;
   align-items: center;
   vertical-align: center;
   margin: 5px;
 }
+
+
 
 #linklist {
   size: 100%;
@@ -84,10 +87,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: grey;
+  background-color: rgb(137, 19, 19);
   width: 100px;
   height: 100px;
-  margin: 5px;
+  margin: 5px auto;
   border-radius: 10px;
   transition: border-radius 0.3s ease;
   align-items: center;
@@ -108,6 +111,9 @@ canvas {
   align-self: center;
   background-color: darkgrey;
   align-self: center;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px #000;
+
 
 }
 
